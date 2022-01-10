@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Friends</title>
+    <title>Chats</title>
 </head>
 <body>
     <div class="status-bar">
@@ -32,14 +32,14 @@
     </div>
     <header class="header">
         <div class="header-title">
-            <strong>Friends</strong>
+            <strong>Chats</strong>
         </div>
         <div class="header-icons">
             <span>
                 <i class="fas fa-search fa-lg"></i>
             </span>
             <span>
-                <i class="fas fa-user-plus fa-lg"></i>
+                <i class="fas fa-comment-medical fa-lg"></i>
             </span>
             <span>
                 <i class="fas fa-music fa-lg"></i>
@@ -49,43 +49,49 @@
             </span>
         </div>
     </header>
-    <main class="friends-main">
-        <div class="user-profile">
-            <img src="img/user-profile.png" alt="user profile image">
-            <h2>Pascal</h2>
-        </div>
-        <div class="multi-profile">
-            <div class="multi-profile-header">
-                <span>My Multi-Profile 1</span>
-                <i class="fas fa-angle-up"></i>
-            </div>
-            <div class="multi-profile-space">
-                <div class="multi-profile-1">
-                    <img src="img/multi-profile.png" alt="multi profile image">
-                    <span lang="ko">soonzero</span>
+    <main class="chatrooms">
+        <a href="chat-with-rapunzel.html">
+            <div class="chatroom">
+                <div class="sender">
+                    <div class="sender-profile">
+                        <img src="img/rapunzel-profile-img.png">
+                    </div>
+                    <div class="message-from">
+                        <h3>Rapunzel</h3>
+                        <p>you wanna play chess with me? 😏</p>
+                    </div>
                 </div>
-                <div class="multi-profile-create">
-                    <img src="img/create-multi-profile.png" alt="create new multi profile image">
-                    <span>Create</span>
-                </div>
-            </div>
-        </div>
-        <div class="channel">
-            <div class="channel-header">
-                <span>Channel</span>
-                <i class="fas fa-angle-up"></i>
-            </div>
-            <div class="channel-space">
-                <div class="channel-profile">
-                    <img src="img/chocolate-profile.png">
-                    <span>Channel</span>
-                </div>
-                <div class="channel-desc">
-                    <span>2</span>
-                    <i class="fas fa-angle-right"></i>
+                <div class="sender-detail">
+                    <div class="time-stamp">
+                        Yesterday
+                    </div>
+                    <div class="badge">
+                        1
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
+        <a href="group-chatroom.html">
+            <div class="chatroom">
+                <div class="sender">
+                    <div class="sender-profile">
+                        <img src="img/group-photo.png">
+                    </div>
+                    <div class="message-from">
+                        <h3>Rapunzel, Flynn, Maximus <span>4</span></h3>
+                        <p>Guys!! Happy New Year 🥳🎉</p>
+                    </div>
+                </div>
+                <div class="sender-detail">
+                    <div class="time-stamp">
+                        Jan 1
+                    </div>
+                    <div class="badge no-show">
+                        1
+                    </div>
+                </div>
+            </div>
+        </a>
     </main>
     <nav class="navigation-bar">
         <ul>
@@ -120,9 +126,6 @@
             </li>
         </ul>
     </nav>
-    <div class="screen-splash">
-        <i class="fas fa-comments fa-3x"></i>
-    </div>
     <div class="no-mobile">
         Your screen is too big!<br>Try smaller 😉
     </div>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Friends</title>
+    <title>My View</title>
 </head>
 <body>
     <div class="status-bar">
@@ -32,14 +32,11 @@
     </div>
     <header class="header">
         <div class="header-title">
-            <strong>Friends</strong>
+            <strong>View</strong>
         </div>
         <div class="header-icons">
             <span>
                 <i class="fas fa-search fa-lg"></i>
-            </span>
-            <span>
-                <i class="fas fa-user-plus fa-lg"></i>
             </span>
             <span>
                 <i class="fas fa-music fa-lg"></i>
@@ -49,42 +46,23 @@
             </span>
         </div>
     </header>
-    <main class="friends-main">
-        <div class="user-profile">
-            <img src="img/user-profile.png" alt="user profile image">
-            <h2>Pascal</h2>
+    <main class="view-content">
+        <div class="main-menu">
+            <ul>
+                <li class="current-list">My View</li>
+                <li>Discover</li>
+                <li>COVID-19</li>
+                <li>coco tv+</li>
+            </ul>
         </div>
-        <div class="multi-profile">
-            <div class="multi-profile-header">
-                <span>My Multi-Profile 1</span>
-                <i class="fas fa-angle-up"></i>
-            </div>
-            <div class="multi-profile-space">
-                <div class="multi-profile-1">
-                    <img src="img/multi-profile.png" alt="multi profile image">
-                    <span lang="ko">soonzero</span>
-                </div>
-                <div class="multi-profile-create">
-                    <img src="img/create-multi-profile.png" alt="create new multi profile image">
-                    <span>Create</span>
-                </div>
-            </div>
-        </div>
-        <div class="channel">
-            <div class="channel-header">
-                <span>Channel</span>
-                <i class="fas fa-angle-up"></i>
-            </div>
-            <div class="channel-space">
-                <div class="channel-profile">
-                    <img src="img/chocolate-profile.png">
-                    <span>Channel</span>
-                </div>
-                <div class="channel-desc">
-                    <span>2</span>
-                    <i class="fas fa-angle-right"></i>
-                </div>
-            </div>
+        <div class="main-content">
+            <p>
+                Add channels that interest you <br>and create a My View tab that's uniquely you!
+            </p>
+            <img src="#">
+            <button type="button">
+                Explore Channels
+            </button>
         </div>
     </main>
     <nav class="navigation-bar">
@@ -120,9 +98,7 @@
             </li>
         </ul>
     </nav>
-    <div class="screen-splash">
-        <i class="fas fa-comments fa-3x"></i>
-    </div>
+    <div id="guard"></div>
     <div class="no-mobile">
         Your screen is too big!<br>Try smaller 😉
     </div>
