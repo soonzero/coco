@@ -639,3 +639,59 @@ body {
   padding-bottom: 0;
   padding-right: 10px;
 }
+
+.reply {
+  width: 100%;
+  padding: 15px 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.reply i {
+  cursor: pointer;
+}
+
+.reply .attach-button i {
+  opacity: 0.5;
+  width: 7.5%;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.reply .reply-input {
+  position: relative;
+  width: 92.5%;
+}
+
+.reply .reply-input input {
+  width: 100%;
+  border: 1px solid var(--color-sgray);
+  padding: 15px;
+  border-radius: 50px;
+}
+
+.reply .reply-input input:focus {
+  outline: none;
+}
+
+.reply .reply-input i {
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
+  opacity: 0.5;
+}
+
+.reply .reply-input i.emoji {
+  position: absolute;
+  right: 60px;
+}
+
+.reply .reply-input button {
+  display: none;
+}
