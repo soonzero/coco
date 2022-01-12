@@ -89,6 +89,10 @@ body {
   border-top: 1px solid var(--color-coco);
 }
 
+.navigation-bar i {
+  color: #e5e5e5;
+}
+
 .navigation-bar ul {
   width: 100%;
   list-style: none;
