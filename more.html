@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Chats</title>
+    <title>Shopping</title>
   </head>
   <body>
     <div class="status-bar">
@@ -29,14 +29,11 @@
     </div>
     <header class="header">
       <div class="header-title">
-        <strong>Chats</strong>
+        <strong>More</strong>
       </div>
       <div class="header-icons">
         <span>
           <i class="fas fa-search fa-lg"></i>
-        </span>
-        <span>
-          <i class="fas fa-comment-medical fa-lg"></i>
         </span>
         <span>
           <i class="fas fa-music fa-lg"></i>
@@ -46,41 +43,34 @@
         </span>
       </div>
     </header>
-    <main class="chatrooms">
-      <a href="chat.html">
-        <div class="chatroom">
-          <div class="sender">
-            <div class="sender-profile">
-              <img src="img/rapunzel-profile-img.png" />
-            </div>
-            <div class="message-from">
-              <h3>Rapunzel</h3>
-              <p>you wanna play chess with me? 😏</p>
-            </div>
-          </div>
-          <div class="sender-detail">
-            <div class="time-stamp">Yesterday</div>
-            <div class="badge">1</div>
+    <main>
+      <div class="wallet">
+        <div class="wallet-first">
+          <div class="wallet-title">Wallet</div>
+          <div class="wallet-extra">
+            <span>Certificate</span>
+            <span>QR</span>
           </div>
         </div>
-      </a>
-      <a href="#">
-        <div class="chatroom">
-          <div class="sender">
-            <div class="sender-profile">
-              <img src="img/group-photo.png" />
-            </div>
-            <div class="message-from">
-              <h3>Rapunzel, Flynn, Maximus <span>4</span></h3>
-              <p>Guys!! Happy New Year 🥳🎉</p>
-            </div>
+        <div class="wallet-banner">Try cocopay+ for a month</div>
+        <div class="cocopay">
+          <div class="cocopay-title">
+            <i class="fas fa-comment"></i>
+            <span>pay</span>
           </div>
-          <div class="sender-detail">
-            <div class="time-stamp">Jan 1</div>
-            <div class="badge no-show">1</div>
+          <span id="cocopay-balance">0</span>
+        </div>
+        <div class="cocopay-detail">
+          <div class="cocopay-detail-left">
+            <span>Send</span>
+            <span>Pay</span>
+            <span>Asset</span>
+          </div>
+          <div class="cocopay-detail-right">
+            <span>Buy</span>
           </div>
         </div>
-      </a>
+      </div>
     </main>
     <nav class="navigation-bar">
       <ul>
@@ -115,6 +105,7 @@
         </li>
       </ul>
     </nav>
+    <div id="guard"></div>
     <div class="no-mobile">Your screen is too big!<br />Try smaller 😉</div>
     <script src="status-bar.js"></script>
     <script

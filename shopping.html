@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Chats</title>
+    <title>Shopping</title>
   </head>
   <body>
     <div class="status-bar">
@@ -29,14 +29,11 @@
     </div>
     <header class="header">
       <div class="header-title">
-        <strong>Chats</strong>
+        <strong>Shopping</strong>
       </div>
       <div class="header-icons">
         <span>
           <i class="fas fa-search fa-lg"></i>
-        </span>
-        <span>
-          <i class="fas fa-comment-medical fa-lg"></i>
         </span>
         <span>
           <i class="fas fa-music fa-lg"></i>
@@ -46,40 +43,26 @@
         </span>
       </div>
     </header>
-    <main class="chatrooms">
-      <a href="chat.html">
-        <div class="chatroom">
-          <div class="sender">
-            <div class="sender-profile">
-              <img src="img/rapunzel-profile-img.png" />
-            </div>
-            <div class="message-from">
-              <h3>Rapunzel</h3>
-              <p>you wanna play chess with me? 😏</p>
-            </div>
-          </div>
-          <div class="sender-detail">
-            <div class="time-stamp">Yesterday</div>
-            <div class="badge">1</div>
-          </div>
-        </div>
+    <main class="shopping-menu-list">
+      <a href="#" class="shopping-menu gift">
+        <i class="fas fa-gift fa-2x"></i>
+        <span>Gift</span>
       </a>
-      <a href="#">
-        <div class="chatroom">
-          <div class="sender">
-            <div class="sender-profile">
-              <img src="img/group-photo.png" />
-            </div>
-            <div class="message-from">
-              <h3>Rapunzel, Flynn, Maximus <span>4</span></h3>
-              <p>Guys!! Happy New Year 🥳🎉</p>
-            </div>
-          </div>
-          <div class="sender-detail">
-            <div class="time-stamp">Jan 1</div>
-            <div class="badge no-show">1</div>
-          </div>
-        </div>
+      <a href="#" class="shopping-menu shop">
+        <i class="fas fa-shopping-cart fa-2x"></i>
+        <span>Shop</span>
+      </a>
+      <a href="#" class="shopping-menu donation">
+        <i class="fas fa-donate fa-2x"></i>
+        <span>Donate</span>
+      </a>
+      <a href="#" class="shopping-menu funding">
+        <i class="fas fa-search-dollar fa-2x"></i>
+        <span>Fund</span>
+      </a>
+      <a href="#" class="shopping-menu shopping-live">
+        <i class="fas fa-broadcast-tower fa-2x"></i>
+        <span>Live</span>
       </a>
     </main>
     <nav class="navigation-bar">
@@ -115,6 +98,7 @@
         </li>
       </ul>
     </nav>
+    <div id="guard"></div>
     <div class="no-mobile">Your screen is too big!<br />Try smaller 😉</div>
     <script src="status-bar.js"></script>
     <script

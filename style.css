@@ -8,6 +8,7 @@
   --color-gray: #8492a6;
   --color-sgray: #afb3b9;
   --color-red: tomato;
+  --color-scoco: #ba7844;
 }
 
 * {
@@ -640,6 +641,8 @@ body {
   padding-right: 10px;
 }
 
+/* Chat */
+
 .reply {
   width: 100%;
   padding: 15px 20px;
@@ -694,4 +697,105 @@ body {
 
 .reply .reply-input button {
   display: none;
+}
+
+/* Shopping */
+
+.shopping-menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-top: 2px solid #e5e5e5;
+}
+
+.shopping-menu {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.shopping-menu i {
+  margin-bottom: 10px;
+}
+
+.shopping-menu span {
+  font-size: 14px;
+}
+
+/* More */
+
+.wallet {
+  background-color: var(--color-scoco);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.wallet-first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.wallet-title {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.wallet-extra {
+  display: flex;
+}
+
+.wallet-extra span {
+  padding: 0 20px;
+  border-right: 1px solid var(--color-sgray);
+}
+
+.wallet-extra span:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.wallet-banner {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-weight: 700;
+  color: var(--color-scoco);
+  margin-bottom: 30px;
+}
+
+.cocopay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.cocopay-title {
+  display: flex;
+  align-items: center;
+  font-style: italic;
+}
+
+.cocopay-title i {
+  padding-top: 4px;
+  margin-right: 3px;
+}
+
+.cocopay-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cocopay-detail-left span {
+  margin-right: 30px;
 }

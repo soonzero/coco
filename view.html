@@ -1,108 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>My View</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="status-bar">
-        <div class="connection">
-            <div class="carrier">
-                <i class="fas fa-signal"></i>
-                coco
-            </div>
+      <div class="connection">
+        <div class="carrier">
+          <i class="fas fa-signal"></i>
+          coco
         </div>
-        <div class="clock">
+      </div>
+      <div class="clock"></div>
+      <div class="power">
+        <span class="battery-percent"> </span>
+        <div class="battery-image">
+          <i class="fas fa-battery-full"></i>
+          <i class="fas fa-battery-three-quarters"></i>
+          <i class="fas fa-battery-half"></i>
+          <i class="fas fa-battery-quarter"></i>
+          <i class="fas fa-battery-empty"></i>
         </div>
-        <div class="power">
-            <span class="battery-percent">
-                
-            </span>
-            <div class="battery-image">
-                <i class="fas fa-battery-full"></i>
-                <i class="fas fa-battery-three-quarters"></i>
-                <i class="fas fa-battery-half"></i>
-                <i class="fas fa-battery-quarter"></i>
-                <i class="fas fa-battery-empty"></i>
-            </div>
-        </div>
+      </div>
     </div>
     <header class="header">
-        <div class="header-title">
-            <strong>View</strong>
-        </div>
-        <div class="header-icons">
-            <span>
-                <i class="fas fa-search fa-lg"></i>
-            </span>
-            <span>
-                <i class="fas fa-music fa-lg"></i>
-            </span>
-            <span>
-                <i class="fas fa-cog fa-lg"></i>
-            </span>
-        </div>
+      <div class="header-title">
+        <strong>View</strong>
+      </div>
+      <div class="header-icons">
+        <span>
+          <i class="fas fa-search fa-lg"></i>
+        </span>
+        <span>
+          <i class="fas fa-music fa-lg"></i>
+        </span>
+        <span>
+          <i class="fas fa-cog fa-lg"></i>
+        </span>
+      </div>
     </header>
     <div class="main-menu">
-        <ul>
-            <li class="current-list">My View</li>
-            <li>Discover</li>
-            <li>COVID-19</li>
-            <li>coco tv+</li>
-        </ul>
+      <ul>
+        <li class="current-list">My View</li>
+        <li>Discover</li>
+        <li>COVID-19</li>
+        <li>coco tv+</li>
+      </ul>
     </div>
     <main class="view-content">
-        <div class="main-content">
-            <p>
-                Add channels that interest you and <br>create a My View tab that's uniquely you!
-            </p>
-            <img src="img/main-content.png">
-            <button type="button">
-                Explore Channels
-            </button>
-        </div>
+      <div class="main-content">
+        <p>
+          Add channels that interest you and <br />create a My View tab that's
+          uniquely you!
+        </p>
+        <img src="img/main-content.png" />
+        <button type="button">Explore Channels</button>
+      </div>
     </main>
     <nav class="navigation-bar">
-        <ul>
-            <li>
-                <a href="friends.html">
-                    <i class="far fa-user fa-2x"></i>
-                    <!-- <i class="fas fa-user"></i> -->
-                </a>
-            </li>
-            <li class="notification-able">
-                <a href="chats.html">
-                    <i class="far fa-comment fa-2x"></i>
-                    <span class="notification badge">1</span>
-                    <!-- <i class="fas fa-comment"></i> -->
-                </a>
-            </li>
-            <li>
-                <a href="view.html">
-                    <i class="fas fa-cookie fa-2x"></i>
-                    <!-- <i class="fas fa-cookie-bite"></i> -->
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fas fa-shopping-bag fa-2x"></i>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fas fa-ellipsis-h fa-2x"></i>
-                </a>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <a href="friends.html">
+            <i class="far fa-user fa-2x"></i>
+            <!-- <i class="fas fa-user"></i> -->
+          </a>
+        </li>
+        <li class="notification-able">
+          <a href="chats.html">
+            <i class="far fa-comment fa-2x"></i>
+            <span class="notification badge">1</span>
+            <!-- <i class="fas fa-comment"></i> -->
+          </a>
+        </li>
+        <li>
+          <a href="view.html">
+            <i class="fas fa-cookie fa-2x"></i>
+            <!-- <i class="fas fa-cookie-bite"></i> -->
+          </a>
+        </li>
+        <li>
+          <a href="shopping.html">
+            <i class="fas fa-shopping-bag fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="more.html">
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
     </nav>
     <div id="guard"></div>
-    <div class="no-mobile">
-        Your screen is too big!<br>Try smaller 😉
-    </div>
+    <div class="no-mobile">Your screen is too big!<br />Try smaller 😉</div>
     <script src="status-bar.js"></script>
-    <script src="https://kit.fontawesome.com/e92b518d9c.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/e92b518d9c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
