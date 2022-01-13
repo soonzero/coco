@@ -1,0 +1,71 @@
+/* Chats */
+
+.chatrooms {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.chatrooms a {
+  text-decoration: none;
+}
+
+.chatrooms .chatroom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chatrooms .chatroom .sender {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.chatrooms .chatroom .sender .sender-profile img {
+  width: 70px;
+  height: auto;
+  border-radius: 36.5%;
+  margin-right: 20px;
+}
+
+.chatrooms .chatroom .sender .sender-profile .message-from {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatrooms .chatroom .sender .message-from h3 {
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+.chatrooms .chatroom .sender .message-from h3 span {
+  color: var(--color-gray);
+}
+
+.chatrooms .chatroom .sender .message-from p {
+  color: var(--color-gray);
+  font-size: 17px;
+}
+
+.chatrooms .chatroom .sender-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.chatrooms .chatroom .sender-detail .time-stamp {
+  color: var(--color-sgray);
+  display: inline-block;
+  margin-bottom: 7px;
+}
+
+.chatrooms .chatroom .sender-detail .no-show {
+  visibility: hidden;
+}

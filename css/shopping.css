@@ -1,0 +1,26 @@
+/* Shopping */
+
+.shopping-menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-top: 2px solid #e5e5e5;
+}
+
+.shopping-menu {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.shopping-menu i {
+  margin-bottom: 10px;
+}
+
+.shopping-menu span {
+  font-size: 14px;
+}

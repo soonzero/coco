@@ -1,0 +1,121 @@
+/* Friends */
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.screen-splash {
+  background-color: var(--color-coco);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  animation: hideSplashScreen 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.friends-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.friends-main .user-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.friends-main .user-profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 36.5%;
+  margin-right: 15px;
+}
+
+.friends-main .user-profile h2 {
+  font-weight: 600;
+}
+
+.multi-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.multi-profile .multi-profile-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1.5px solid var(--color-coco);
+}
+
+.multi-profile .multi-profile-header span {
+  color: var(--color-gray);
+}
+
+.multi-profile .multi-profile-space {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.multi-profile .multi-profile-space .multi-profile-1,
+.multi-profile .multi-profile-space .multi-profile-create {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 22.5px;
+}
+
+.multi-profile .multi-profile-space img {
+  width: 60px;
+  height: 60px;
+  border-radius: 36.5%;
+  margin-bottom: 5px;
+}
+
+.channel .channel-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.channel .channel-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1.5px solid var(--color-coco);
+}
+
+.channel .channel-header span {
+  color: var(--color-gray);
+}
+
+.channel .channel-profile {
+  display: flex;
+  align-items: center;
+}
+
+.channel .channel-space .channel-profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 36.5%;
+  margin-bottom: 5px;
+  margin-right: 15px;
+}

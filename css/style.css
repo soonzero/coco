@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+:root {
+  /* Color */
+
+  --color-defa: #273444;
+  --color-coco: #84563c;
+  --color-gray: #8492a6;
+  --color-sgray: #afb3b9;
+  --color-red: tomato;
+  --color-scoco: #ba7844;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  color: var(--color-defa);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Lato",
+    sans-serif, "Apple Color Emoji";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Common things below */
+
+/* Status-bar */
+
+.status-bar {
+  display: flex;
+  margin: 10px 20px;
+  justify-content: center;
+  height: auto;
+}
+
+.connection {
+  display: flex;
+  width: 33%;
+  text-align: left;
+}
+
+.clock {
+  width: 33%;
+  text-align: center;
+}
+
+.power {
+  width: 33%;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.battery-percent {
+  margin-right: 5px;
+}
+
+.battery-image .hidden {
+  display: none;
+}
+/* badge */
+
+.badge {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  background-color: var(--color-red);
+}
+
+/* Navigation-bar */
+
+.navigation-bar {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 72px;
+  background-color: var(--color-coco);
+  border-top: 1px solid var(--color-coco);
+}
+
+.navigation-bar i {
+  color: #e5e5e5;
+}
+
+.navigation-bar ul {
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 35px;
+}
+
+.navigation-bar ul .notification-able {
+  position: relative;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.navigation-bar ul li .notification {
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  animation: notificationAnimation 2500ms ease-in-out infinite;
+}
+
+#guard {
+  width: 0;
+  height: 72px;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: auto;
+}
+
+.header-title strong {
+  font-size: 30px;
+}
+
+.header-icons span i {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.header-icons span:last-child i {
+  margin-right: 0;
+}
+
+/* Screen size > 704px */
+
+.no-mobile {
+  z-index: 99;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  font-size: 32px;
+  text-align: center;
+  color: white;
+  background-color: var(--color-coco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 704px) {
+  .no-mobile {
+    display: none;
+  }
+}
+
+/* Common things beside */

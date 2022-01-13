@@ -1,0 +1,69 @@
+/* Login - header */
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.login-header strong {
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.login-header span {
+  line-height: 1.5;
+  color: var(--color-gray);
+}
+
+/* Login-form */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+}
+
+.username,
+.password {
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1.5px solid var(--color-gray);
+  transition: border-color 300ms ease-in-out;
+  padding: 15px;
+}
+
+.username:focus,
+.password:focus {
+  outline: none;
+  border-color: var(--color-coco);
+}
+
+.login-button {
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  background-color: var(--color-coco);
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  transition: opacity 500ms ease;
+}
+
+.login-button:hover {
+  opacity: 0.7;
+}
+
+.find-account {
+  text-decoration: none;
+  font-size: 12px;
+  text-align: center;
+  color: var(--color-gray);
+}

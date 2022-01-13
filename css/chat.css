@@ -1,0 +1,190 @@
+/* Chatroom */
+
+.chatroom-header {
+  display: flex;
+  padding: 15px 20px;
+  background-color: rgb(132, 86, 60, 0.8);
+}
+
+.chatroom-header a {
+  display: flex;
+  align-items: center;
+  width: 33%;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.chatroom-header a i {
+  margin-right: 10px;
+}
+
+.chatroom-header .chatroom-friend {
+  width: 33%;
+  text-align: center;
+  font-size: 22px;
+}
+
+.chatroom-header .chatroom-header-icons {
+  width: 33%;
+  text-align: right;
+}
+
+.chatroom-header .chatroom-header-icons i {
+  padding-top: 5px;
+  margin-right: 10px;
+}
+
+.chatroom-header .chatroom-header-icons i:last-child {
+  margin-right: 0;
+}
+
+.dialogue {
+  padding: 20px;
+  height: 100vh;
+  background-color: rgb(132, 86, 60, 0.8);
+}
+
+.dialogue .date {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dialogue .date span {
+  padding: 4px 15px;
+  border-radius: 30px;
+  font-size: 15px;
+  color: white;
+  background-color: var(--color-sgray);
+}
+
+.dialogue .messages .message {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.dialogue .messages .message .profile-in-message img {
+  width: 55px;
+  border-radius: 42.5%;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.dialogue .messages .message .message-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialogue .messages .message .message-text p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.dialogue .messages .message .message-text .text-and-time {
+  display: flex;
+  align-items: flex-end;
+}
+
+.dialogue .messages .message .message-text .text {
+  background-color: var(--color-coco);
+  color: white;
+  padding: 10px 10px 10px 15px;
+  border-radius: 0 50px 50px 50px;
+  margin-right: 10px;
+}
+
+.dialogue .messages .message .message-text .time {
+  color: var(--color-sgray);
+}
+
+.dialogue .messages .my-message {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.dialogue .messages .my-message span {
+  color: var(--color-coco);
+  background-color: white;
+  padding: 10px 15px 10px 10px;
+  border-radius: 50px 0 50px 50px;
+}
+
+.dialogue .messages .my-message .first-message {
+  margin-bottom: 20px;
+}
+
+.dialogue .messages .my-message .second-message {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+.dialogue .messages .my-message .second-message .text-2 {
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.dialogue .messages .my-message .time-2 {
+  background-color: transparent;
+  color: var(--color-sgray);
+  padding-bottom: 0;
+  padding-right: 10px;
+}
+
+/* Chat */
+
+.reply {
+  width: 100%;
+  padding: 15px 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.reply i {
+  cursor: pointer;
+}
+
+.reply .attach-button i {
+  opacity: 0.5;
+  width: 7.5%;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.reply .reply-input {
+  position: relative;
+  width: 92.5%;
+}
+
+.reply .reply-input input {
+  width: 100%;
+  border: 1px solid var(--color-sgray);
+  padding: 15px;
+  border-radius: 50px;
+}
+
+.reply .reply-input input:focus {
+  outline: none;
+}
+
+.reply .reply-input i {
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
+  opacity: 0.5;
+}
+
+.reply .reply-input i.emoji {
+  position: absolute;
+  right: 60px;
+}
+
+.reply .reply-input button {
+  display: none;
+}
